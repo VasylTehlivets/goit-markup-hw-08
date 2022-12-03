@@ -1,11 +1,14 @@
 .footer-form {
         display: flex;
-        width: 450px;
         height: 156px;
         flex-direction: column;
         justify-content: center;
 
-     @include desktop{
+        @include mobile{
+            width: 450px;
+        }
+
+        @include desktop{
         justify-content: flex-start;
         width: 570px;
         height: 86px;

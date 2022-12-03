@@ -59,7 +59,7 @@ display: none;
 }
 
 .nav__link::after {
-    @include desktop{
+    @include tablet{
         content: "";
         position: absolute;
         display: block;

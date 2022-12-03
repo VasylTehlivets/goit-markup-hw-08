@@ -102,11 +102,22 @@
 }
 
 .form__checkbox-icons {
+    @include mobile{
     position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        border-radius: 2px;
+    }
+
+    @include desktop{
+position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
     border-radius: 2px;
+    }
+   
 }
 
 .uncheck {
@@ -135,9 +146,16 @@
 }
 
 .form__agreement {
+    @include mobile{
+        // font-weight: 400;
+            font-size: 12px;
+            line-height: (14/12);
+    }
+    @include desktop{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
 }
 
 .form__contract {
