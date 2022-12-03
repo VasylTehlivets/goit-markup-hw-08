@@ -1,0 +1,28 @@
+.header {
+    border-bottom: 1px solid var(--primary-border-color);
+}
+
+.header-logo__studio {
+    color: var(--secondary-dark-color);
+
+
+    @include desktop{
+        margin-right: 90px;
+    }
+}
+
+.header-container__nav {
+        display: flex;
+        align-items: center;
+
+
+    @include tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include desktop{
+        justify-content: start;  
+     }
+}

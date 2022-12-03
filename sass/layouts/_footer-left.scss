@@ -1,0 +1,15 @@
+.footer-left {
+     text-align: center;
+
+    @include desktop{
+        text-align: left;
+    }
+    }
+
+.container-logo{
+        margin-bottom: 20px;
+}
+
+.footer-logo__studio {
+        color: var(--primary-light-color);
+}

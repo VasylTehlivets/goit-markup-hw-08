@@ -1,0 +1,14 @@
+ .socials-list {
+    display: flex;
+    gap: 10px;
+} 
+
+.socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    outline: transparent;
+}

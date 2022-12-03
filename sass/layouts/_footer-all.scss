@@ -1,0 +1,17 @@
+.footer-all {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 60px;
+
+  @include tablet{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    align-items: baseline;
+  }
+
+    @include desktop {
+      gap: 93px;
+    }
+ }

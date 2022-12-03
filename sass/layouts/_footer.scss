@@ -1,0 +1,8 @@
+.footer {
+    @include section;
+    background-color: var(--primary-dark-color);
+
+    @include desktop {
+            @include section(120px);
+        }
+}
