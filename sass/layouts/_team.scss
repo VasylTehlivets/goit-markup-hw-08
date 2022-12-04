@@ -1,6 +1,10 @@
 .team {
     @include section;
     background: var(--secondary-light-color);
+
+    @include desktop {
+         @include section(120px);
+        }
 }
 
 .team__title {

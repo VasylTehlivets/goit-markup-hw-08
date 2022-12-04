@@ -109,14 +109,16 @@
 
 .mobile-socials{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 64px;
-    gap: 20px;
+    gap: 20px; 
 }
 
 .mobile-socials__link{
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
     font-weight: 500;
     font-size: 18px;
     line-height: (22/18);
@@ -125,20 +127,19 @@
 }
 
 
-// .mobile-socials__link:not(last-child):after {
+.mobile-socials__link::after {
     
-//         content: "";
-//         position: absolute;
-//         display: block;
-//         width: 2px;
-//         height: 100%;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 2px;
+        height: 100%;
+        margin-left: 10px;
+        right: -10px;
+        background-color: rgba(33, 33, 33, 0.2);
+        }
 
-//         margin-left: 10px;
-//         // left: 0;
-//         // bottom: -1px;
-//         background: var(--title-text-color);
-//         opacity: 1;
-//             // border-radius: 2px;
-//             border: 1px solid rgba(33, 33, 33, 0.2);
-//                 // transform: rotate(90deg);
-//         }
+        .mobile-socials__link:hover::after,
+        .mobile-socials__link:focus::after{
+             background-color: var(--accent-color)
+                }

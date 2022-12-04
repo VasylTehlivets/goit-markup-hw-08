@@ -85,7 +85,9 @@
 }
 
 .form__checkbox-label {
-    margin-left: 8px;
+    @include desktop{
+        margin-left: 8px;
+    }  
 }
 
 .form__checkbox-input {
@@ -111,7 +113,7 @@
     }
 
     @include desktop{
-position: absolute;
+    position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
@@ -147,7 +149,6 @@ position: absolute;
 
 .form__agreement {
     @include mobile{
-        // font-weight: 400;
             font-size: 12px;
             line-height: (14/12);
     }
