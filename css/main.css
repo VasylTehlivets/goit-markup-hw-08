@@ -1475,12 +1475,12 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .essense-poster {
-    padding: 24px 18px;
+    padding: 20px 18px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .essense-poster {
-    padding: 24px 20px;
+    padding: 20px 24px;
   }
 }
 
