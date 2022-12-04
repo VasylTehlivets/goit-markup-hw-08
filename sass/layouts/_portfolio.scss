@@ -66,10 +66,6 @@
     }
 }
 
-// .portfolio__card-item {
-//     // width: 370px;
-// }
-
 .portfolio__card-link {
     display: flex;
     flex-direction: column;
@@ -83,24 +79,11 @@
     }
 }
 
-//   .portfolio__card-link:hover,
-//   .portfolio__card-link:focus {
-//       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-//   }
-
 .portfolio__card-essence {
     padding: 20px 24px;
     border: 1px solid var(--secondary-border-color);
     border-top: 0;
 }
-
-// .portfolio__card-essence:not(2) {
-//     @include tablet{width: 354px;
-//         height: 100px;
-//         background-color: aqua;}
-
-
-// }
 
 .portfolio__card-title {
 
@@ -109,17 +92,6 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-
-    // @include tablet{
-    //     width: 304px;
-    //     // height: 70px;
-    // // &:not(2){
-    // //     margin-bottom: 0;
-    // // }
-    // // &:nth-child(2){
-    // //     width: 306px;
-    // // }
-    // }
 }
 
 .portfolio__card-title:nth-child(2) {
@@ -173,10 +145,10 @@
 
 .essense-poster {
     @include tablet {
-        padding: 24px 18px;
+        padding: 20px 18px;
     }
 
-    @include tablet {
-        padding: 24px 20px;
+    @include desktop {
+        padding: 20px 24px;
     }
 }
