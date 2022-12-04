@@ -1,9 +1,9 @@
-.portfolio{
+.portfolio {
     @include section;
 
     @include desktop {
-         @include section(120px);
-        }
+        @include section(120px);
+    }
 }
 
 .portfolio__filters-list {
@@ -13,14 +13,14 @@
     margin-bottom: 40px;
     gap: 8px;
 
-        @include tablet{
+    @include tablet {
         justify-content: center;
         margin-bottom: 30px;
-        }
+    }
 
-        @include desktop{
+    @include desktop {
         margin-bottom: 50px;
-        }
+    }
 }
 
 .portfolio__filters-button {
@@ -28,7 +28,7 @@
     color: var(--title-text-color);
     background: var(--secondary-light-color);
     font-weight: 500;
-    line-height: (26/16);
+    line-height: calc(26/16);
     letter-spacing: 0.03em;
     text-align: center;
     cursor: pointer;
@@ -36,21 +36,21 @@
     border-radius: 4px;
     border: transparent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-         color: var(--primary-light-color);
-         background-color: var(--accent-color);
-         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        }
-    
+        color: var(--primary-light-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
     &--current {
         color: var(--primary-light-color);
         background-color: var(--accent-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        }
+    }
 }
 
 
@@ -60,7 +60,7 @@
     align-items: center;
     gap: 30px;
 
-    @include tablet{
+    @include tablet {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -80,7 +80,7 @@
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
+    }
 }
 
 //   .portfolio__card-link:hover,
@@ -98,7 +98,7 @@
 //     @include tablet{width: 354px;
 //         height: 100px;
 //         background-color: aqua;}
-   
+
 
 // }
 
@@ -109,7 +109,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    
+
     // @include tablet{
     //     width: 304px;
     //     // height: 70px;
@@ -122,7 +122,7 @@
     // }
 }
 
-.portfolio__card-title:nth-child(2){
+.portfolio__card-title:nth-child(2) {
     width: 304px;
     margin-bottom: 0;
 }
@@ -151,21 +151,32 @@
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity cubic-bezier(0.4, 0, 0.2, 1);
+        opacity cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
 
     .portfolio__card-link:hover &,
-    .portfolio__card-link:focus &{
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .portfolio__card-link:focus & {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .portfolio__card-excerpt {
 
     font-weight: 400;
     font-size: 18px;
-    line-height: (28/18);
+    line-height: calc(28/18);
     letter-spacing: 0.03em;
     color: var(--primary-light-color);
+}
+
+
+.essense-poster {
+    @include tablet {
+        padding: 24px 18px;
+    }
+
+    @include tablet {
+        padding: 24px 20px;
+    }
 }

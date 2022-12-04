@@ -1,8 +1,8 @@
-.features{
+.features {
     @include section;
 
-    @include desktop{
-    @include section(120px);
+    @include desktop {
+        @include section(120px);
     }
 }
 
@@ -12,66 +12,66 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
-   
-        
-    @include tablet{
-    flex-direction: row;
-    flex-wrap: wrap;
+
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-     @include desktop{
-    flex-wrap: nowrap;
-    align-items: flex-start;
-            
+    @include desktop {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+
     }
 }
 
 .features__item {
-     @include tablet {
+    @include tablet {
         width: 354px;
-         }
-
-    @include desktop{
-        width: 270px;
     }
-    
-}
-
-.features__icon {
-        display: flex;
-        height: 120px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        background-color: var(--secondary-light-color);
-        border-radius: 4px;
-
-    @include tablet{
-         width: 354px;
-}
 
     @include desktop {
         width: 270px;
+    }
+
 }
+
+.features__icon {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--secondary-light-color);
+    border-radius: 4px;
+
+    @include tablet {
+        width: 354px;
+    }
+
+    @include desktop {
+        width: 270px;
+    }
 }
 
 .features__subtitle {
-        margin-bottom: 10px;
-        color: var(--title-text-color);
-        font-size: 14px;
-        line-height: 1.14;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-    @include tablet{
+    @include tablet {
         text-align: left;
     }
 }
 
 .features__text {
     font-size: 14px;
-    line-height: (24/14);
+    line-height: calc(24/14);
     letter-spacing: 0.03em;
     text-align: left;
 }

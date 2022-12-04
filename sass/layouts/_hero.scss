@@ -12,21 +12,21 @@
     text-align: center;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-     url(../images/hero/hero-480@1x.jpg);
+        url(../images/hero/hero-480@1x.jpg);
 
-    @include retina-bgi{
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero/hero-480@2x.jpg);
-     }
-
-    @include tablet{
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-768@1x.jpg);
-
-    @include retina-bgi{
+    @include retina-bgi {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero/hero-768@2x.jpg);
+            url(../images/hero/hero-480@2x.jpg);
     }
+
+    @include tablet {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-768@1x.jpg);
+
+        @include retina-bgi {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero-768@2x.jpg);
+        }
     }
 
     @include desktop {
@@ -34,45 +34,45 @@
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero/hero-1600@1x.jpg);
-    
-    @include retina-bgi {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero/hero-1600@2x.jpg);
-             }
-         }
+
+        @include retina-bgi {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero-1600@2x.jpg);
+        }
+    }
 }
 
-.hero__title { 
-        font-weight: 900;
-        font-size: 26px;
-        line-height: (42/26);
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--primary-light-color);
-        margin-bottom: 30px;
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42/26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-light-color);
+    margin-bottom: 30px;
 
-        @include tablet{
-            width: 360px;
-            margin-right: auto;
-            margin-left: auto;
-            
-        }
+    @include tablet {
+        width: 360px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
 
 
 
-    @include desktop{
+    @include desktop {
         font-size: 44px;
-        line-height: (60/44);  
-        margin-bottom: 30px; 
-         width: 696px;
+        line-height: calc(60/44);
+        margin-bottom: 30px;
+        width: 696px;
     }
 }
 
 .hero-button {
     padding: 10px 24px;
 
-    @include desktop{
+    @include desktop {
         padding: 10px 32px;
     }
 }

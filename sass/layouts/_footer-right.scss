@@ -1,0 +1,7 @@
+.footer-right {
+     width: 100%;
+
+     @include desktop {
+          width: auto;
+     }
+}
