@@ -31,7 +31,7 @@
               <a href="./index.html" class="nav__link link">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="№" class="nav__link nav__link--current link"
+              <a href="#" class="nav__link link nav__link--current"
                 >Портфоліо</a
               >
             </li>
@@ -61,6 +61,11 @@
             >
           </li>
         </ul>
+        <button class="menu-button js-open-menu" type="button">
+          <svg class="menu-button__menu-open" width="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -101,11 +106,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img
-                    src="./images/img4.jpg"
-                    alt="Фотокартки працівників"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-1@1x.webp 1x,
+                        ./images/portfolio/pf-1200-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-1@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-1@1x.webp 1x,
+                        ./images/portfolio/pf-768-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-1@1x.jpg 1x,
+                        ./images/portfolio/pf-768-1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-1@1x.webp 1x,
+                        ./images/portfolio/pf-480-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-1@1x.jpg 1x,
+                        ./images/portfolio/pf-480-1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-1@1x.jpg"
+                      alt="Фотокартки працівників"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -124,11 +178,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img
-                    src="./images/img5.jpg"
-                    alt="Постер баскетболістів"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-2@1x.webp 1x,
+                        ./images/portfolio/pf-1200-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-2@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-2@1x.webp 1x,
+                        ./images/portfolio/pf-768-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-2@1x.jpg 1x,
+                        ./images/portfolio/pf-768-2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-2@1x.webp 1x,
+                        ./images/portfolio/pf-480-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-2@1x.jpg 1x,
+                        ./images/portfolio/pf-480-2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-2@1x.jpg"
+                      alt="Постер баскетболістів"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -149,11 +252,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img
-                    src="./images/img6.jpg"
-                    alt="Логотип ресторану"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-3@1x.webp 1x,
+                        ./images/portfolio/pf-1200-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-3@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-3@1x.webp 1x,
+                        ./images/portfolio/pf-768-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-3@1x.jpg 1x,
+                        ./images/portfolio/pf-768-3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-3@1x.webp 1x,
+                        ./images/portfolio/pf-480-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-3@1x.jpg 1x,
+                        ./images/portfolio/pf-480-3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-3@1x.jpg"
+                      alt="Логотип ресторану"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -174,7 +326,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img src="./images/img7.jpg" alt="Навушники" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-4@1x.webp 1x,
+                        ./images/portfolio/pf-1200-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-4@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-4@1x.webp 1x,
+                        ./images/portfolio/pf-768-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-4@1x.jpg 1x,
+                        ./images/portfolio/pf-768-4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-4@1x.webp 1x,
+                        ./images/portfolio/pf-480-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-4@1x.jpg 1x,
+                        ./images/portfolio/pf-480-4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-4@1x.jpg"
+                      alt="Навушники"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -195,7 +400,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img src="./images/img8.jpg" alt="Дві коробки" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-5@1x.webp 1x,
+                        ./images/portfolio/pf-1200-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-5@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-5@1x.webp 1x,
+                        ./images/portfolio/pf-768-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-5@1x.jpg 1x,
+                        ./images/portfolio/pf-768-5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-5@1x.webp 1x,
+                        ./images/portfolio/pf-480-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-5@1x.jpg 1x,
+                        ./images/portfolio/pf-480-5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-5@1x.jpg"
+                      alt="Дві коробки"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -216,11 +474,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img
-                    src="./images/img9.jpg"
-                    alt="Монітор компютера"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-6@1x.webp 1x,
+                        ./images/portfolio/pf-1200-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-6@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-6@1x.webp 1x,
+                        ./images/portfolio/pf-768-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-6@1x.jpg 1x,
+                        ./images/portfolio/pf-768-6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-6@1x.webp 1x,
+                        ./images/portfolio/pf-480-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-6@1x.jpg 1x,
+                        ./images/portfolio/pf-480-6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-6@1x.jpg"
+                      alt="Монітор компютера"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -241,11 +548,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img
-                    src="./images/img10.jpg"
-                    alt="Сторінки журналу"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-7@1x.webp 1x,
+                        ./images/portfolio/pf-1200-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-7@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-7@1x.webp 1x,
+                        ./images/portfolio/pf-768-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-7@1x.jpg 1x,
+                        ./images/portfolio/pf-768-7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-7@1x.webp 1x,
+                        ./images/portfolio/pf-480-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-7@1x.jpg 1x,
+                        ./images/portfolio/pf-480-7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-7@1x.jpg"
+                      alt="Сторінки журналу"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -266,11 +622,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img
-                    src="./images/img11.jpg"
-                    alt="Етикетка LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-8@1x.webp 1x,
+                        ./images/portfolio/pf-1200-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-8@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-8@1x.webp 1x,
+                        ./images/portfolio/pf-768-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-8@1x.jpg 1x,
+                        ./images/portfolio/pf-768-8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-8@1x.webp 1x,
+                        ./images/portfolio/pf-480-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-8@1x.jpg 1x,
+                        ./images/portfolio/pf-480-8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-8@1x.jpg"
+                      alt="Етикетка LAB"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -291,11 +696,60 @@
             <li class="portfolio__card-item">
               <a href="#" class="portfolio__card-link link">
                 <div class="portfolio__card-thumb">
-                  <img
-                    src="./images/img12.jpg"
-                    alt="Реклама додатку на ноутбуці"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-9@1x.webp 1x,
+                        ./images/portfolio/pf-1200-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/pf-1200-9@1x.jpg 1x,
+                        ./images/portfolio/pf-1200-9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-9@1x.webp 1x,
+                        ./images/portfolio/pf-768-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/pf-768-9@1x.jpg 1x,
+                        ./images/portfolio/pf-768-9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-9@1x.webp 1x,
+                        ./images/portfolio/pf-480-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width:480px)"
+                      srcset="
+                        ./images/portfolio/pf-480-9@1x.jpg 1x,
+                        ./images/portfolio/pf-480-9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/pf-480-9@1x.jpg"
+                      alt="Реклама додатку на ноутбуці"
+                    />
+                  </picture>
                   <div class="portfolio__card-overlay">
                     <p class="portfolio__card-excerpt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -317,7 +771,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-all">
           <div class="footer-left">
@@ -416,7 +870,6 @@
                 <input
                   type="email"
                   name="mail"
-                  id="mail"
                   class="footer-form__input"
                   placeholder="E-mail"
                 />
@@ -432,5 +885,86 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close" width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link link">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            href="./portfolio.html"
+            class="mobile-menu__link mobile-menu__link--current link"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__phone link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts__mail link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials__item">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-socials__link link"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-socials__link link"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-socials__link link"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-socials__link link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
