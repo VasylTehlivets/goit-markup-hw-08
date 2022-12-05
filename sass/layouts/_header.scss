@@ -4,25 +4,26 @@
 
 .header-logo__studio {
     color: var(--secondary-dark-color);
+}
 
-
-    @include desktop{
-        margin-right: 90px;
+.header-logo {
+    @include desktop {
+        margin-right: 93px;
     }
 }
 
 .header-container__nav {
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
 
 
-    @include tablet{
+    @include tablet {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    @include desktop{
-        justify-content: start;  
-     }
+    @include desktop {
+        justify-content: start;
+    }
 }
