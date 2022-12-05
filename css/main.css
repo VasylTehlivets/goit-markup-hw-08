@@ -704,9 +704,10 @@ textarea {
 .header-logo__studio {
   color: var(--secondary-dark-color);
 }
+
 @media screen and (min-width: 1200px) {
-  .header-logo__studio {
-    margin-right: 90px;
+  .header-logo {
+    margin-right: 93px;
   }
 }
 
