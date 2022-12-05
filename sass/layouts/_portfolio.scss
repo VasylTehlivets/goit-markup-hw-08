@@ -66,6 +66,14 @@
     }
 }
 
+.portfolio__card-item {
+    width: 100%;
+
+    @include mobile {
+        width: auto;
+    }
+}
+
 .portfolio__card-link {
     display: flex;
     flex-direction: column;
@@ -79,7 +87,13 @@
     }
 }
 
+.portfolio__photo {
+    width: 100%;
+}
+
 .portfolio__card-essence {
+    // flex-grow: 1;
+
     padding: 20px 24px;
     border: 1px solid var(--secondary-border-color);
     border-top: 0;
