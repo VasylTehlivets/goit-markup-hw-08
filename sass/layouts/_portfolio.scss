@@ -57,7 +57,7 @@
 .portfolio__card-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     gap: 30px;
 
     @include tablet {
@@ -69,7 +69,11 @@
 .portfolio__card-item {
     width: 100%;
 
-    @include mobile {
+    @include tablet {
+        // width: 354px;
+    }
+
+    @include desktop {
         width: auto;
     }
 }
@@ -92,7 +96,7 @@
 }
 
 .portfolio__card-essence {
-    // flex-grow: 1;
+    flex-grow: 1;
 
     padding: 20px 24px;
     border: 1px solid var(--secondary-border-color);
@@ -157,12 +161,12 @@
 }
 
 
-.essense-poster {
-    @include tablet {
-        padding: 20px 18px;
-    }
+// .essense-poster {
+//     @include tablet {
+//         padding: 20px 18px;
+//     }
 
-    @include desktop {
-        padding: 20px 24px;
-    }
-}
+//     @include desktop {
+//         padding: 20px 24px;
+//     }
+// }

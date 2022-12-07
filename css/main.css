@@ -1395,7 +1395,6 @@ textarea {
 .portfolio__card-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -1408,7 +1407,7 @@ textarea {
 .portfolio__card-item {
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .portfolio__card-item {
     width: auto;
   }
@@ -1430,6 +1429,7 @@ textarea {
 }
 
 .portfolio__card-essence {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--secondary-border-color);
   border-top: 0;
@@ -1485,17 +1485,6 @@ textarea {
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--primary-light-color);
-}
-
-@media screen and (min-width: 768px) {
-  .essense-poster {
-    padding: 20px 18px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .essense-poster {
-    padding: 20px 24px;
-  }
 }
 
 .backdrop {
